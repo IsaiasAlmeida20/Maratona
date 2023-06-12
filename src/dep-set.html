@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>B & P Gestão Patrimonial</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link href="./../css/styles.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <div id="wrapper">
+
+        <!-- Barra Lateral -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../src/home.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">B & P Gestão Patrimonial</div>
+            </a>
+
+            <hr class="sidebar-divider my-0">
+
+            <li class="nav-item">
+                <a class="nav-link" href="../src/home.html">
+                    <i class="fas fa-fw fa-home"></i>
+                    <span>Inicio</span></a>
+            </li>
+
+            <hr class="sidebar-divider">
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-chart-line"></i>
+                    <span>Financeiro</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Gerencial</h6>
+                        <a class="collapse-item" href="./dep-set.html">Departamentos e Setores</a>
+                        <a class="collapse-item" href="./funcionarios.html">Funcionarios</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-fw fa-calendar-plus"></i>
+                    <span>Ocorrencia</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Patrimonio</span></a>
+            </li>
+
+        </ul>
+
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <div id="content">
+
+                <!-- Bara de navagação -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <form
+                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Buscando por..."
+                                aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small"
+                                            placeholder="Search for..." aria-label="Search"
+                                            aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <!-- Alertas -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell fa-fw"></i>
+                                <span class="badge badge-danger badge-counter">3+</span>
+                            </a>
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">
+                                    Cental de Chamados
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-primary">
+                                            <i class="fas fa-file-alt text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">24/02/2023</div>
+                                        <span class="font-weight-bold">Um novo chamado foi aberto</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Ver todos chamdos</a>
+                            </div>
+                        </li>
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Usúario</span>
+                                <img class="img-profile rounded-circle"
+                                    src="../img/undraw_profile.svg">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Perfil
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Sair
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+                <div class="container-fluid">
+
+                    <h1 class="h3 mb-2 text-gray-800">Gerencial departamentos e setores</h1>
+
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3 d-flex justify-content-between">
+                            <div>
+                                <h6 class="m-0 font-weight-bold text-primary">Departamentos e Setores</h6>
+                            </div>
+                            <div>
+                                <a href="./novo-dep-set.html" class="btn btn-primary btn-icon-split">
+                                    <span class="icon text-white-50">
+                                        <i class="fas fa-plus"></i>
+                                    </span>
+                                    <span class="text">Adionar</span>
+                                </a>
+                            </div>                                
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>Departamento</th>
+                                            <th>Setores</th>
+                                            <th>Ações</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Recursos Humanos</td>
+                                            <td>
+                                                <ul>
+                                                    <li>Recrutamento e Seleção</li>
+                                                    <li>Treinamento</li>
+                                                    <li>Folha de Pagamento</li>
+                                                    <li>Benefícios</li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="btn btn-danger">
+                                                    <span class="icon">
+                                                        <i class="fas fa-trash"></i>
+                                                    </span>
+                                                </a>
+                                                <a href="#" class="btn btn-info">
+                                                    <span class="icon">
+                                                        <i class="fas fa-pencil"></i>
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Financeiro</td>
+                                            <td>
+                                                <ul>
+                                                    <li>Contabilidade</li>
+                                                    <li>Tesouraria</li>
+                                                    <li>Contas a Pagar</li>
+                                                    <li>Contas a Receber</li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="btn btn-danger">
+                                                    <span class="icon">
+                                                        <i class="fas fa-trash"></i>
+                                                    </span>
+                                                </a>
+                                                <a href="#" class="btn btn-info">
+                                                    <span class="icon">
+                                                        <i class="fas fa-pencil"></i>
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Marketing</td>
+                                            <td>
+                                                <ul>
+                                                    <li>Publicidade e Propaganda</li>
+                                                    <li>Pesquisa de Mercado</li>
+                                                    <li>Mídias Sociais</li>
+                                                    <li>Eventos</li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="btn btn-danger">
+                                                    <span class="icon">
+                                                        <i class="fas fa-trash"></i>
+                                                    </span>
+                                                </a>
+                                                <a href="#" class="btn btn-info">
+                                                    <span class="icon">
+                                                        <i class="fas fa-pencil"></i>
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>TI</td>
+                                            <td>
+                                                <ul>
+                                                    <li>Desenvolvimento de Software</li>
+                                                    <li>Infraestrutura de Rede</li>
+                                                    <li>Suporte Técnico</li>
+                                                    <li>Segurança da Informação</li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="btn btn-danger">
+                                                    <span class="icon">
+                                                        <i class="fas fa-trash"></i>
+                                                    </span>
+                                                </a>
+                                                <a href="#" class="btn btn-info">
+                                                    <span class="icon">
+                                                        <i class="fas fa-pencil"></i>
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vendas</td>
+                                            <td>
+                                                <ul>
+                                                    <li>Vendas Internas</li>
+                                                    <li>Vendas Externas</li>
+                                                    <li>Gestão de Clientes</li>
+                                                    <li>Pós-vendas</li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="btn btn-danger">
+                                                    <span class="icon">
+                                                        <i class="fas fa-trash"></i>
+                                                    </span>
+                                                </a>
+                                                <a href="#" class="btn btn-info">
+                                                    <span class="icon">
+                                                        <i class="fas fa-pencil"></i>
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>                                           
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; B & P Gestão Patrimonial</span>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+    </div>
+
+
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Sair?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Deseja mesmo sair? Essa ação finalizara sua sessão.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-success" type="button" data-dismiss="modal">Cancelar</button>
+                    <a class="btn btn-primary" href="../index.html">Sair</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <script src="../js/scripts.js"></script>
+
+</body>
+
+</html>
