@@ -141,6 +141,7 @@
                                         <span class="font-weight-bold">Um novo chamado foi aberto</span>
                                     </div>
                                 </a>
+
                                 <a class="dropdown-item text-center small text-gray-500" href="#">Ver todos chamdos</a>
                             </div>
                         </li>
@@ -174,152 +175,69 @@
 
                 <div class="container-fluid">
 
-                    <h1 class="h3 mb-2 text-gray-800">Gerencial departamentos e setores</h1>
+                    <h1 class="h3 mb-2 text-gray-800">Cadastrar Funcionarios</h1>
 
                     <div class="card shadow mb-4">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <h4 class="text-dark">Dados do funcionario</h4>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label text-dark">Nome</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="ex: Antonio Medeiros">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label text-dark">CPF</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="ex: 999.999.999-99">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class=" text-dark">E-mail</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ex: antonio@email.com">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label text-dark">Telefone</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="ex: (88) 9 8888-9999">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class=" text-dark">Endereco</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="ex: Rua Z">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class=" text-dark">Salario</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="ex: 2.550,00">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class=" text-dark">Setor</label>
+                                    <select class="form-select">
+                                        <option value="1">Contabilidade</option>
+                                        <option value="2">Recrutamento e Seleção</option>
+                                        <option value="3">Desenvolvimento de Software</option>
+                                        <option value="4">Gestão de Clientes</option>
+                                        <option value="5">Tesouraria</option>
+                                        <option value="6">Publicidade e Propaganda</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="card-header py-3 d-flex justify-content-between">
                             <div>
-                                <h6 class="m-0 font-weight-bold text-primary">Departamentos e Setores</h6>
+                                <a href="./dep-set.html" class="btn btn-info btn-icon-split">
+                                    <span class="icon text-white-50">
+                                        <i class="fas fa-x"></i>
+                                    </span>
+                                    <span class="text">Cancelar</span>
+                                </a>
                             </div>
                             <div>
-                                <a href="./novo-dep-set.html" class="btn btn-primary btn-icon-split">
+                                <a href="./dep-set.html" class="btn btn-success btn-icon-split">
                                     <span class="icon text-white-50">
                                         <i class="fas fa-plus"></i>
                                     </span>
-                                    <span class="text d-none d-md-block">Adionar</span>
+                                    <span class="text">Salvar</span>
                                 </a>
                             </div>                                
                         </div>
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                    <thead>
-                                        <tr>
-                                            <th>Departamento</th>
-                                            <th>Setores</th>
-                                            <th>Ações</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Recursos Humanos</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Recrutamento e Seleção</li>
-                                                    <li>Treinamento</li>
-                                                    <li>Folha de Pagamento</li>
-                                                    <li>Benefícios</li>
-                                                </ul>
-                                            </td>
-                                            <td>
-                                                <a href="#" class="btn btn-danger">
-                                                    <span class="icon">
-                                                        <i class="fas fa-trash"></i>
-                                                    </span>
-                                                </a>
-                                                <a href="#" class="btn btn-info">
-                                                    <span class="icon">
-                                                        <i class="fas fa-pencil"></i>
-                                                    </span>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Financeiro</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Contabilidade</li>
-                                                    <li>Tesouraria</li>
-                                                    <li>Contas a Pagar</li>
-                                                    <li>Contas a Receber</li>
-                                                </ul>
-                                            </td>
-                                            <td>
-                                                <a href="#" class="btn btn-danger">
-                                                    <span class="icon">
-                                                        <i class="fas fa-trash"></i>
-                                                    </span>
-                                                </a>
-                                                <a href="#" class="btn btn-info">
-                                                    <span class="icon">
-                                                        <i class="fas fa-pencil"></i>
-                                                    </span>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Marketing</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Publicidade e Propaganda</li>
-                                                    <li>Pesquisa de Mercado</li>
-                                                    <li>Mídias Sociais</li>
-                                                    <li>Eventos</li>
-                                                </ul>
-                                            </td>
-                                            <td>
-                                                <a href="#" class="btn btn-danger">
-                                                    <span class="icon">
-                                                        <i class="fas fa-trash"></i>
-                                                    </span>
-                                                </a>
-                                                <a href="#" class="btn btn-info">
-                                                    <span class="icon">
-                                                        <i class="fas fa-pencil"></i>
-                                                    </span>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>TI</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Desenvolvimento de Software</li>
-                                                    <li>Infraestrutura de Rede</li>
-                                                    <li>Suporte Técnico</li>
-                                                    <li>Segurança da Informação</li>
-                                                </ul>
-                                            </td>
-                                            <td>
-                                                <a href="#" class="btn btn-danger">
-                                                    <span class="icon">
-                                                        <i class="fas fa-trash"></i>
-                                                    </span>
-                                                </a>
-                                                <a href="#" class="btn btn-info">
-                                                    <span class="icon">
-                                                        <i class="fas fa-pencil"></i>
-                                                    </span>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Vendas</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Vendas Internas</li>
-                                                    <li>Vendas Externas</li>
-                                                    <li>Gestão de Clientes</li>
-                                                    <li>Pós-vendas</li>
-                                                </ul>
-                                            </td>
-                                            <td>
-                                                <a href="#" class="btn btn-danger">
-                                                    <span class="icon">
-                                                        <i class="fas fa-trash"></i>
-                                                    </span>
-                                                </a>
-                                                <a href="#" class="btn btn-info">
-                                                    <span class="icon">
-                                                        <i class="fas fa-pencil"></i>
-                                                    </span>
-                                                </a>
-                                            </td>
-                                        </tr>                                           
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
 
