@@ -130,7 +130,7 @@
                                 <h6 class="dropdown-header">
                                     Cental de Ocorrências
                                 </h6>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                <a class="dropdown-item d-flex align-items-center" href="./revisar-ocorrencia.html">
                                     <div class="mr-3">
                                         <div class="icon-circle bg-primary">
                                             <i class="fas fa-file-alt text-white"></i>
@@ -157,11 +157,6 @@
                             </a>
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Perfil
-                                </a>
-                                <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Sair
@@ -180,8 +175,15 @@
                             <div class="table-responsive">
                                 <div class="row g-3">
                                     <div class="col-sm-6">
-                                      <label for="firstName" class="form-label">ID da Ocorrência</label>
-                                      <input type="text" class="form-control"  value="2" required>
+                                        <label for="exampleFormControlInput1" class=" text-dark">Status</label>
+                                        <select class="form-select">
+                                            <option value="1">Aberta</option>
+                                            <option value="2">Atendimento</option>
+                                            <option value="3">Atrasada</option>
+                                            <option value="4">Cancelada</option>
+                                            <option value="5">Concluida</option>
+                                            <option value="6">Publicidade e Propaganda</option>
+                                        </select>
                                     </div>
                         
                                     <div class="col-sm-6">
@@ -197,27 +199,27 @@
                                     </div>
                         
                                     <div class="col-12">
-                                      <div class="mb-3">
-                                        <label for="exampleFormControlInput1" class="form-label text-dark">Nome da ocorrencia</label>
-                                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="ex: FFFF">
-                                      </div>
-                                      <div class="mb-3">
-                                          <label for="exampleFormControlInput1" class="form-label text-dark">Nome do Funcionario</label>
-                                          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="ex: FFFFF">
-                                      </div>
-                                      <div class="mb-3">
-                                          <label for="exampleFormControlInput1" class=" text-dark">Nome do patrimonio</label>
-                                          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="ex: FFFF">
-                                      </div>
-                                      <div class="mb-3">
-                                        <label for="exampleFormControlInput1" class="text-dark">Descrição</label>
-                                        <textarea class="form-control" value="descrição"></textarea>
-                                      </div>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label text-dark">ID da Ocorrência</label>
+                                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="ex: 2">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label text-dark">Nome do Funcionario</label>
+                                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="ex: Paula">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class=" text-dark">Nome do patrimonio</label>
+                                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="ex: Carro de som">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="text-dark">Descrição</label>
+                                            <textarea class="form-control" value="descrição" placeholder="Danificado por mal uso."></textarea>
+                                        </div>
                                     </div>
                                     <div>
-                                        <a href="#" class="btn btn-success btn-icon-split">
+                                        <a href="./ocorrencia.html" class="btn btn-success btn-icon-split m-2" onclick="alert('Ocorrência Revisada')">
                                             <span class="icon text-white-50">
-                                                <i class="fas fa-newspaper"></i>
+                                                <i class="fas fa-check"></i>
                                             </span>
                                             <span class="text">Revisar ocorrência</span>
                                         </a>
