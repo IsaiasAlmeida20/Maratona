@@ -174,92 +174,61 @@
                 </nav>
 
                 <div class="container-fluid">
-
-                    <div class="card shadow mb-4">
-                        <div class="card-header py-3 d-flex justify-content-between">
-                            <div>
-                                <h6 class="m-0 font-weight-bold text-primary">Patrimônio</h6>
-                            </div>
-                            <div>
-                                <a href="./novo-patrimonio.html" class="btn btn-primary btn-icon-split">
-                                    <span class="icon text-white-50">
-                                        <i class="fas fa-plus"></i>
-                                    </span>
-                                    <span class="text d-none d-md-block">Adionar</span>
-                                </a>
-                            </div> 
-                        </div>
+                    
+                    <div class="card shadow mb-4"> 
                         <div class="card-body">
                             <div class="table-responsive">
-                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                    <thead>
-                                        <tr>
-                                            <th>ID Patrimônio</th>
-                                            <th>Nome Setor</th>
-                                            <th>Categoria</th>
-                                            <th>Situação</th>
-                                            <th>Descrição</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>3</td>
-                                            <td>Lorem ipsum dolor sit amet.</td>
-                                            <td>Ativo</td>
-                                            <td>Lorem ipsum dolor sit amet.</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>5</td>
-                                            <td>Lorem ipsum dolor sit amet.</td>
-                                            <td>Perdido</td>
-                                            <td>Lorem ipsum dolor sit amet.</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>6</td>
-                                            <td>Lorem ipsum dolor sit amet.</td>
-                                            <td>Roubado</td>
-                                            <td>Lorem ipsum dolor sit amet.</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>9</td>
-                                            <td>Lorem ipsum dolor sit amet.</td>
-                                            <td>Quebrado</td>
-                                            <td>Lorem ipsum dolor sit amet.</td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>9</td>
-                                            <td>Lorem ipsum dolor sit amet.</td>
-                                            <td>Defeito</td>
-                                            <td>Lorem ipsum dolor sit amet.</td>
-                                        </tr> 
-                                        <tr>
-                                            <td>8</td>
-                                            <td>1</td>
-                                            <td>Lorem ipsum dolor sit amet.</td>
-                                            <td>Outro</td>
-                                            <td>Lorem ipsum dolor sit amet.</td>
-                                        </tr>                                           
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>                    
-                        <div class="card-header py-3 d-flex justify-content-between">
-                            <div>
-                                <a href="#" class="btn btn-info btn-icon-split">
-                                    <span class="icon text-white-50">
-                                        <i class="fas fa-newspaper"></i>
-                                    </span>
-                                    <span class="text">Gerar Relatorio</span>
-                                </a>
+                                <div class="row g-3">
+                                    <div class="col-sm-6">
+                                      <label for="firstName" class="form-label">ID da Ocorrência</label>
+                                      <input type="text" class="form-control"  value="2" required>
+                                    </div>
+                        
+                                    <div class="col-sm-6">
+                                      <label for="exampleFormControlInput1" class=" text-dark">Situação</label>
+                                      <select class="form-select">
+                                          <option value="1">Ativo</option>
+                                          <option value="2">Perdido</option>
+                                          <option value="3">Roubado</option>
+                                          <option value="4">Quebrado</option>
+                                          <option value="5">Defeito</option>
+                                          <option value="6">Outro</option>
+                                      </select>
+                                    </div>
+                        
+                                    <div class="col-12">
+                                      <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label text-dark">Nome da ocorrencia</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="ex: FFFF">
+                                      </div>
+                                      <div class="mb-3">
+                                          <label for="exampleFormControlInput1" class="form-label text-dark">Nome do Funcionario</label>
+                                          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="ex: FFFFF">
+                                      </div>
+                                      <div class="mb-3">
+                                          <label for="exampleFormControlInput1" class=" text-dark">Nome do patrimonio</label>
+                                          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="ex: FFFF">
+                                      </div>
+                                      <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="text-dark">Descrição</label>
+                                        <textarea class="form-control" value="descrição"></textarea>
+                                      </div>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="btn btn-success btn-icon-split">
+                                            <span class="icon text-white-50">
+                                                <i class="fas fa-newspaper"></i>
+                                            </span>
+                                            <span class="text">Revisar ocorrência</span>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
+
             </div>
 
             <footer class="sticky-footer bg-white">
