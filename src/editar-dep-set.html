@@ -169,63 +169,84 @@
                 </nav>
 
                 <div class="container-fluid">
-                    
-                    <div class="card shadow mb-4"> 
+
+                    <h1 class="h3 mb-2 text-gray-800">Editar departamento e setores</h1>
+
+                    <div class="card shadow mb-4">
                         <div class="card-body">
                             <div class="table-responsive">
-                                <div class="row g-3 w-100">
-                                    <div class="col-sm-6">
-                                        <label for="exampleFormControlInput1" class=" text-dark">Status</label>
-                                        <select class="form-select">
-                                            <option value="1">Aberta</option>
-                                            <option value="2">Atendimento</option>
-                                            <option value="3">Atrasada</option>
-                                            <option value="4">Cancelada</option>
-                                            <option value="5">Concluida</option>
-                                            <option value="6">Publicidade e Propaganda</option>
-                                        </select>
-                                    </div>
-                        
-                                    <div class="col-sm-6">
-                                      <label for="exampleFormControlInput1" class=" text-dark">Situação</label>
-                                      <select class="form-select">
-                                          <option value="1">Ativo</option>
-                                          <option value="2">Perdido</option>
-                                          <option value="3">Roubado</option>
-                                          <option value="4">Quebrado</option>
-                                          <option value="5">Defeito</option>
-                                          <option value="6">Outro</option>
-                                      </select>
-                                    </div>
-                        
-                                    <div class="col-12">
-                                        <div class="m-2">
-                                            <label for="exampleFormControlInput1" class="form-label text-dark">ID da Ocorrência</label>
-                                            <input type="text" class="form-control" id="exampleFormControlInput1" value="2">
-                                        </div>
-                                        <div class="m-2">
-                                            <label for="exampleFormControlInput1" class="form-label text-dark">Nome do Funcionario</label>
-                                            <input type="text" class="form-control" id="exampleFormControlInput1" value="Paula">
-                                        </div>
-                                        <div class="m-2">
-                                            <label for="exampleFormControlInput1" class=" text-dark">Nome do patrimonio</label>
-                                            <input type="text" class="form-control" id="exampleFormControlInput1" value="Carro de som">
-                                        </div>
-                                        <div class="m-2">
-                                            <label for="exampleFormControlInput1" class="text-dark">Descrição</label>
-                                            <textarea class="form-control" value="descrição" placeholder="Danificado por mal uso."></textarea>
-                                        </div>
-                                    </div>
+                                <h4 class="text-dark">Departamento</h4>
+                                <div class="m-2">
+                                    <label for="exampleFormControlInput1" class="form-label text-dark">Nome do departamento</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Departamento Vendas">
+                                </div>
+                                <div class="m-2">
+                                    <label for="exampleFormControlInput1" class=" text-dark">Endereco do departamento</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Primeiro andar">
+                                </div>
+                                <div class="m-2">
+                                    <label for="exampleFormControlInput1" class=" text-dark">Setores</label>
+                                    <ul>
+                                        <li>
+                                            Vendas Internas 
+                                            <a href="#"onclick="confirm('Excluir este setor?')">
+                                                <span class="icon">
+                                                    <i class="fas fa-trash"></i>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            Vendas Externas
+                                            <a href="#"onclick="confirm('Excluir este setor?')">
+                                                <span class="icon">
+                                                    <i class="fas fa-trash"></i>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            Gestão de Clientes
+                                            <a href="#"onclick="confirm('Excluir este setor?')">
+                                                <span class="icon">
+                                                    <i class="fas fa-trash"></i>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            Direção
+                                            <a href="#"onclick="confirm('Excluir este setor?')">
+                                                <span class="icon">
+                                                    <i class="fas fa-trash"></i>
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <h4 class="text-dark">Adicionar setor</h4>
+                                <div class="m-2">
+                                    <label for="exampleFormControlInput1" class="form-label text-dark">Nome do setor</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Setor Financeiro">
+                                </div>
+                                <div class="m-2">
+                                    <label for="exampleFormControlInput1" class=" text-dark">Endereco do setor</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Sala 4">
+                                </div>
+                                <div class="form-check form-switch ms-4">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                    <label class="form-check-label" for="flexSwitchCheckChecked">Direção</label>
                                 </div>
                             </div>
                         </div>
+
                         <div class="card-header py-3 d-flex justify-content-between">
-                            <a href="./ocorrencia.html" class="btn btn-success btn-icon-split m-2" onclick="alert('Ocorrência Revisada')">
-                                <span class="icon text-white-50">
-                                    <i class="fas fa-check"></i>
-                                </span>
-                                <span class="text">Revisar ocorrência</span>
-                            </a>
+                            <div>
+                                <a href="./dep-set.html" class="btn btn-success btn-icon-split">
+                                    <span class="icon text-white-50">
+                                        <i class="fas fa-check"></i>
+                                    </span>
+                                    <span class="text">Salvar alterações</span>
+                                </a>
+                            </div>                                
                         </div>
                         
                     </div>
